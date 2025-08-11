@@ -50,17 +50,21 @@ body {
   background-color: #fff;
 }
 
-section {
+.section {
   padding: 120px 0;
 }
 
 .container {
-  max-width: 1440px;
-  padding: 0 156px;
+  max-width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
 /* header */
+
+.class-header {
+  border-bottom: 1px solid #e7e9fc
+}
 
 .header-menu {
   display: flex;
@@ -69,7 +73,7 @@ section {
 
 .header-nav-links {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 
 .navigation-list,
@@ -87,6 +91,7 @@ section {
   text-transform: uppercase;
   color: #4d5ae5;
   padding: 24px 0;
+  margin-right: 76px
 }
 
 .logo-accent {
@@ -149,6 +154,7 @@ section {
   border-radius: 4px;
   padding: 16px 32px;
   margin: 0 auto;
+  min-width: 169px
 }
 
 .button:hover,
@@ -170,9 +176,7 @@ section {
   gap: 24px;
 }
 .advantages-item {
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
+  flex-basis: calc((100% - 72px) / 4)
 }
 
 .advantages-h-three {
@@ -181,19 +185,13 @@ section {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 /* team */
 
 .team {
   background-color: #f4f4fd;
-}
-
-.our-team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 72px;
 }
 
 .base-h-two {
@@ -204,6 +202,7 @@ section {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team-card-list {
@@ -222,38 +221,39 @@ section {
 }
 
 .description-team {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
+  text-align: center;
   max-width: 264px;
   padding: 32px 0;
+}
+
+.align-text {
+  margin-bottom: 8px
+}
+
+.base-text {
+  text-align: center;
 }
 
 /* portfolio */
 
 .portfolio-card-list {
   display: flex;
-  justify-content: space-between;
+  column-gap: 24px;
   row-gap: 48px;
   flex-wrap: wrap;
 }
 
 .description {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   padding: 32px 16px;
-}
-
-.portfolio-card {
   border: 1px solid #e7e9fc;
 }
 
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
+.portfolio-card {
+  max-width: calc((100% - 48px) / 3);
+}
+
+.base-h-three {
+  margin-bottom: 8px;
 }
 
 /* footer */
@@ -262,16 +262,17 @@ footer {
   padding: 100px 0;
 }
 
-.footer-cont {
-  display: flex;
-  flex-direction: column;
-}
-
 .logo-text-footer {
   color: #f4f4fd;
 }
-
+.footer-cont .logo {
+  display: inline-block;
+  margin: 0 0 16px 0;
+  padding: 0;
+}
 .footer-text {
   color: #f4f4fd;
   max-width: 264px;
+  text-align: start;
 }
+
