@@ -198,8 +198,8 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
-  letter-spacing: 2%;
-  text-align: center;
+letter-spacing: 0.02em;
+text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
@@ -228,10 +228,6 @@ body {
 
 .align-text {
   margin-bottom: 8px
-}
-
-.base-text {
-  text-align: center;
 }
 
 /* portfolio */
