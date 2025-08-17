@@ -434,7 +434,6 @@ footer {
 }
 
 .label {
- 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -456,6 +455,7 @@ footer {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .input::placeholder {
@@ -474,7 +474,7 @@ footer {
   display: flex;
   gap: 24px;
 }
-.button-footer .team-icon{
+.button-footer .team-icon {
   margin-left: 16px;
 }
 
@@ -675,4 +675,3 @@ footer {
   border: none;
   fill: #f4f4fd;
 }
-
